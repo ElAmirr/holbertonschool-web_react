@@ -15,12 +15,12 @@ module.exports = {
       },
 
       {
-        test: /\.(png|svg|jpg?g|gif)$/i,
+        test: /\.(png|svg|jpe?g|gif)$/i,
         type: 'asset/resource',
       },
     ],
   },
-
+  
   mode: "production",
 
   performance: {
