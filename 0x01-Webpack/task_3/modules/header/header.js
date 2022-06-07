@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import "../css/header.css";
+import "./header.css";
 
 $("<div id='logo'></div>").appendTo($("body"));
 $("<h1>Holberton Dashboard</h1>").appendTo($("body"));

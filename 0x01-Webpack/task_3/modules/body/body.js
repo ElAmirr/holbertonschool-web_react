@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import "../css/body.css"
+import "./body.css"
 const _ = require('lodash');
 
 $("<button>Click here to get started</button>").appendTo($("body"));
