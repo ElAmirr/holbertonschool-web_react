@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -16,7 +17,12 @@ module.exports = {
     runtimeChunk: 'single',
   },
 
-  plugins: [new HtmlWebpackPlugin()],
+  plugins:
+   [
+     new HtmlWebpackPlugin(),
+    new CleanWebpackPlugin(),
+  ],
+
   
   devtool: "inline-source-map",
 
