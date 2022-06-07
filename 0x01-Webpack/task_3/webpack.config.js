@@ -11,6 +11,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'public'),
+    clean: true,
   },
 
   optimization: {
@@ -19,9 +20,7 @@ module.exports = {
 
   plugins:
    [
-     new HtmlWebpackPlugin({
-       title: "Document"
-     }),
+    new HtmlWebpackPlugin(),
     new CleanWebpackPlugin(),
   ],
 
