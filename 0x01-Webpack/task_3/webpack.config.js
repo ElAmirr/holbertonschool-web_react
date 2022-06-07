@@ -14,9 +14,7 @@ module.exports = {
     clean: true,
   },
 
-  optimization: {
-    runtimeChunk: 'single',
-  },
+
 
   plugins:
    [
