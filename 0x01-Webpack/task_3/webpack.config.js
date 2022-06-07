@@ -19,7 +19,9 @@ module.exports = {
 
   plugins:
    [
-     new HtmlWebpackPlugin(),
+     new HtmlWebpackPlugin({
+       title: "Document"
+     }),
     new CleanWebpackPlugin(),
   ],
 
