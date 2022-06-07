@@ -18,6 +18,8 @@ module.exports = {
 
   plugins: [new HtmlWebpackPlugin()],
   
+  devtool: "inline-source-map",
+
   module: {
     rules: [
 			{
