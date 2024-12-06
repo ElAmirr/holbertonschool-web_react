@@ -1,0 +1,12 @@
+#logo {
+    width: 200px;
+    height: 200px;
+    background: url("../assets/holberton-logo.jpg") no-repeat center;
+    background-size: 200px 200px;
+  }
+  
+  button {
+    font-weight: bold;
+    float: right;
+  }
+  
