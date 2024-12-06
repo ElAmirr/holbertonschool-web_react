@@ -1,32 +1,22 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: './js/dashboard_main.js',
+  entry: "./js/dashboard_main.js",
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, "public"),
+    filename: "bundle.js",
   },
-  
+  mode: "production",
   module: {
     rules: [
-			{
-        test: /\.css$/i,
-        use: ['style-loader','css-loader']
-      },
-
       {
-        test: /\.(png|svg|jpe?g|gif)$/i,
-        type: 'asset/resource',
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
       },
     ],
   },
-  
-  mode: "production",
-
-  performance: {
-    hints: false,
-    maxEntrypointSize: 512000,
-    maxAssetSize: 512000
-}
-
 };
